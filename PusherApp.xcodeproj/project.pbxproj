@@ -26,7 +26,6 @@
 		19337DB429450AD700D729D4 /* MessageViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19337DB329450AD700D729D4 /* MessageViewModelTest.swift */; };
 		19337DB829450C5900D729D4 /* BasicCombineMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19337DB729450C5900D729D4 /* BasicCombineMessageService.swift */; };
 		19BD2950294E19F80035D936 /* MessageListenerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BD294F294E19F80035D936 /* MessageListenerView.swift */; };
-		19BD2952294E26020035D936 /* secrets.json in Resources */ = {isa = PBXBuildFile; fileRef = 19BD2951294E26020035D936 /* secrets.json */; };
 		19BD2954294E28C50035D936 /* RandomlyThrowingMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BD2953294E28C50035D936 /* RandomlyThrowingMessageService.swift */; };
 		19C7B62929481E9500EDBC46 /* ContentViewFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C7B62829481E9500EDBC46 /* ContentViewFinal.swift */; };
 		19C7B6EA294CCB1500EDBC46 /* RateControllingMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C7B6E9294CCB1500EDBC46 /* RateControllingMessageService.swift */; };
@@ -74,7 +73,6 @@
 		19337DB329450AD700D729D4 /* MessageViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModelTest.swift; sourceTree = "<group>"; };
 		19337DB729450C5900D729D4 /* BasicCombineMessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCombineMessageService.swift; sourceTree = "<group>"; };
 		19BD294F294E19F80035D936 /* MessageListenerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListenerView.swift; sourceTree = "<group>"; };
-		19BD2951294E26020035D936 /* secrets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = secrets.json; sourceTree = "<group>"; };
 		19BD2953294E28C50035D936 /* RandomlyThrowingMessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomlyThrowingMessageService.swift; sourceTree = "<group>"; };
 		19C7B62829481E9500EDBC46 /* ContentViewFinal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewFinal.swift; sourceTree = "<group>"; };
 		19C7B6E9294CCB1500EDBC46 /* RateControllingMessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateControllingMessageService.swift; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 				19337DA42943A35000D729D4 /* Views */,
 				19337D9F29439C4B00D729D4 /* Services */,
 				19337D6F2943998300D729D4 /* PusherAppApp.swift */,
-				19BD2951294E26020035D936 /* secrets.json */,
 				19C7B6EB294CD12E00EDBC46 /* Initial components b4 refactor */,
 				19337D9C29439B4200D729D4 /* Model */,
 				19337D732943998500D729D4 /* Assets.xcassets */,
@@ -333,7 +330,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19BD2952294E26020035D936 /* secrets.json in Resources */,
 				19337D772943998500D729D4 /* Preview Assets.xcassets in Resources */,
 				19337D742943998500D729D4 /* Assets.xcassets in Resources */,
 			);
