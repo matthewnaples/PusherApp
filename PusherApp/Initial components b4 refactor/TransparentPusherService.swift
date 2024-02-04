@@ -9,11 +9,6 @@ import Foundation
 import PusherSwift
 
 enum PusherInfo: String{
-//    static let app_id = "780628"
-//    static let key = "5d3657875c763e1b0282"
-//    static let cluster = "us3"
-//    static let channel = "sample"
-//    static let event = "sampleMessage"
     case app_id
     case key
     case cluster
@@ -26,11 +21,8 @@ enum PusherInfo: String{
         let config = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: String]
         return config[self.rawValue]!
     }
-    
 }
-fileprivate func getKey(pusherInfo: PusherInfo){
 
-}
 class TransparentPusherService: PusherDelegate{
     static let shared = TransparentPusherService()
     let pusher: Pusher

@@ -11,19 +11,19 @@ import PusherSwift
 enum MessageServiceError: Error{
     case couldNotDecode(String)
 }
-public class PusherMessageService: MessageService, PusherDelegate{
+class PusherMessageService: MessageService{
     private static let GENERIC_ERROR_MESSAGE = "We had an error occur in our system, please try again later"
     private let pusher: Pusher
     var channel: PusherChannel?
     
     public init(){
+        
         let options = PusherClientOptions(
             host: .cluster(PusherInfo.cluster.value)
-
         )
+        
         self.pusher = Pusher(key: PusherInfo.key.value, options: options)
         //        pusher.connect()
-       
     }
     
     private func decodeEvent(json: String) -> Result<Message, ApplicationError>{
@@ -43,23 +43,7 @@ public class PusherMessageService: MessageService, PusherDelegate{
             return .failure(.generalError(PusherMessageService.GENERIC_ERROR_MESSAGE, error))
         }
     }
-    public func subscribe(onReceive: @escaping (Result<Message,ApplicationError>) -> Void) {
-        pusher.connect()
-        print("subscribed")
-        channel?.unbindAll()
-        channel = pusher.subscribe(channelName: PusherInfo.channel.value)
-        channel?.bind(eventName: PusherInfo.event.value, eventCallback: {[weak self] event in
-            guard let self = self else {
-                return
-            }
-            
-            guard let json = event.data else{
-                return // do not emit empty events
-            }
-            let decoded = self.decodeEvent(json: json)
-            onReceive(decoded)
-        })
-    }
+   
     
    public func unsubscribe(){
         if let channel = channel {
@@ -69,11 +53,32 @@ public class PusherMessageService: MessageService, PusherDelegate{
         pusher.disconnect()
     }
     
-    struct PusherMessage: Codable{
-        let title: String
-        let message: String
-        
+
+    public func subscribe(onReceive: @escaping (Result<Message,ApplicationError>) -> Void) {
+        pusher.connect()
+        print("subscribed")
+        channel?.unbindAll()
+        channel = pusher.subscribe(channelName: PusherInfo.channel.value)
+        channel?.bind(eventName: PusherInfo.event.value, eventCallback: {[weak self] event in
+            guard let self = self else {
+                return
+            }
+            guard let json = event.data else{
+                return // do not emit empty events
+            }
+            let decoded = self.decodeEvent(json: json)
+            onReceive(decoded)
+        })
     }
     
-    
 }
+
+struct PusherMessage: Codable{
+    let title: String
+    let message: String
+}
+
+
+
+
+

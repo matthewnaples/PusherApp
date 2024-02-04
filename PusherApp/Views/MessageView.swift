@@ -20,7 +20,6 @@ struct MessageView: View{
                 .transition(
                     .offset(x: -100).animation(.interpolatingSpring(stiffness: 10, damping: 10))
                         .combined(with: .opacity)
-                
                 )
             Text(message.body)
                 .offset(x: bodyAppeared ? 0 : -100)
@@ -33,7 +32,6 @@ struct MessageView: View{
 
         }
         .onAppear(perform: fadeIn)
-        
         .onDisappear(perform: fadeOut)
     }
     func fadeIn() {

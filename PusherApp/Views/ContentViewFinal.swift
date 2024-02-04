@@ -17,14 +17,11 @@ struct ContentViewFinal: View {
             VStack{
                 Spacer()
                 if initialLoad{
-                    
                     VStack{
                     ScalingCircleLoadingView()
                     Text("Connecting to message stream...")
                     }
-                    
                     .padding()
-                    
                     .background(RoundedRectangle(cornerRadius: 10, style: .continuous )
                                     .background(.ultraThinMaterial))
                 } else{
@@ -42,12 +39,11 @@ struct ContentViewFinal: View {
         DispatchQueue.main.async {
             self.initialLoad = false
             if message != nil{
-                DispatchQueue.main.async {
+//                DispatchQueue.main.async {
                     withAnimation{
                         self.message = nil
                     }
-                }
-              
+//                }
             }
             Task{
                 try await Task.sleep(nanoseconds:500_000_000)

@@ -7,6 +7,15 @@
 
 import XCTest
 @testable import PusherApp
+import PusherSwift
+
+// test that a callback actually gets executed with a message when a consumer subscribes and data has been received by that active subscription.
+// test that a callback actually gets executed with an errpr when a consumer subscribes and data has been received by that active subscription.
+// test that subscribing a new consumer boots all other subscribers off the service.
+
+//assert that subscribing will connect the pusher instance
+//assert that unsubscribing will disconnect the pusher instance
+
 class PusherServiceTests: XCTestCase {
     let pusherService = PusherMessageService()
     override func setUpWithError() throws {
@@ -17,6 +26,11 @@ class PusherServiceTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    func testMock() throws{
+    
+        let pusher = Pusher(key: "key", options: PusherClientOptions(authMethod: AuthMethod.noMethod))
+        let channel = PusherChannel(name: "client-test", connection: )
+    }
     func testCanOnlySubscribeOneCallback() throws {
         var caughtResults1 = [Result<Message, ApplicationError>]()
         var caughtResults2 = [Result<Message, ApplicationError>]()

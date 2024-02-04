@@ -9,11 +9,14 @@ import SwiftUI
 
 @main
 struct PusherAppApp: App {
-    let messageService = RateControllingMessageService(messageService:  PusherMessageService(), minimumDurationBetweenMessages: 3)
+    let messageService = RateControllingMessageService(messageService:  PusherMessageService(), minimumDurationBetweenMessages: 5)
     @State private var toggle = false
     var body: some Scene {
         WindowGroup {
-            ContentViewFinal(messageService: messageService)
+//            ContentViewFinal(messageService: messageService)
+//            ContentViewFinal(messageService: messageService)
+//            TinkeringWithPusher()
+            ContentView1()
         }
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		191B70952A7D7668008DB00A /* PusherSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 191B70942A7D7668008DB00A /* PusherSwift */; };
+		191B70972A7D7AF7008DB00A /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191B70962A7D7AF7008DB00A /* Mocks.swift */; };
 		19337D702943998300D729D4 /* PusherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19337D6F2943998300D729D4 /* PusherAppApp.swift */; };
 		19337D722943998300D729D4 /* ContentViewTake1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19337D712943998300D729D4 /* ContentViewTake1.swift */; };
 		19337D742943998500D729D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19337D732943998500D729D4 /* Assets.xcassets */; };
@@ -27,11 +29,17 @@
 		19337DB829450C5900D729D4 /* BasicCombineMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19337DB729450C5900D729D4 /* BasicCombineMessageService.swift */; };
 		19BD2950294E19F80035D936 /* MessageListenerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BD294F294E19F80035D936 /* MessageListenerView.swift */; };
 		19BD2954294E28C50035D936 /* RandomlyThrowingMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BD2953294E28C50035D936 /* RandomlyThrowingMessageService.swift */; };
+		19BD2956294E30EA0035D936 /* secrets.json in Resources */ = {isa = PBXBuildFile; fileRef = 19BD2955294E30EA0035D936 /* secrets.json */; };
 		19C7B62929481E9500EDBC46 /* ContentViewFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C7B62829481E9500EDBC46 /* ContentViewFinal.swift */; };
 		19C7B6EA294CCB1500EDBC46 /* RateControllingMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C7B6E9294CCB1500EDBC46 /* RateControllingMessageService.swift */; };
 		19C7B725294CD6D000EDBC46 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C7B724294CD6D000EDBC46 /* MessageView.swift */; };
 		19C7B727294D5BF800EDBC46 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C7B726294D5BF800EDBC46 /* LoadingView.swift */; };
 		19C7B729294D61C600EDBC46 /* PusherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C7B728294D61C600EDBC46 /* PusherServiceTests.swift */; };
+		19E2B3532A7AB6BF00AE248C /* ContentViewTake0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E2B3522A7AB6BF00AE248C /* ContentViewTake0.swift */; };
+		19E2B3552A7AC86700AE248C /* ContentView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E2B3542A7AC86700AE248C /* ContentView1.swift */; };
+		19E2B3572A7ACBEB00AE248C /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E2B3562A7ACBEB00AE248C /* ContentView2.swift */; };
+		19E2B3592A7ACF3100AE248C /* ContentView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E2B3582A7ACF3100AE248C /* ContentView3.swift */; };
+		19E2B35B2A7AD64B00AE248C /* ContentView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E2B35A2A7AD64B00AE248C /* ContentView4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		191B70962A7D7AF7008DB00A /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		19337D6C2943998300D729D4 /* PusherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PusherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19337D6F2943998300D729D4 /* PusherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherAppApp.swift; sourceTree = "<group>"; };
 		19337D712943998300D729D4 /* ContentViewTake1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTake1.swift; sourceTree = "<group>"; };
@@ -74,11 +83,17 @@
 		19337DB729450C5900D729D4 /* BasicCombineMessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCombineMessageService.swift; sourceTree = "<group>"; };
 		19BD294F294E19F80035D936 /* MessageListenerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListenerView.swift; sourceTree = "<group>"; };
 		19BD2953294E28C50035D936 /* RandomlyThrowingMessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomlyThrowingMessageService.swift; sourceTree = "<group>"; };
+		19BD2955294E30EA0035D936 /* secrets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = secrets.json; sourceTree = "<group>"; };
 		19C7B62829481E9500EDBC46 /* ContentViewFinal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewFinal.swift; sourceTree = "<group>"; };
 		19C7B6E9294CCB1500EDBC46 /* RateControllingMessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateControllingMessageService.swift; sourceTree = "<group>"; };
 		19C7B724294CD6D000EDBC46 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		19C7B726294D5BF800EDBC46 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		19C7B728294D61C600EDBC46 /* PusherServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusherServiceTests.swift; sourceTree = "<group>"; };
+		19E2B3522A7AB6BF00AE248C /* ContentViewTake0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTake0.swift; sourceTree = "<group>"; };
+		19E2B3542A7AC86700AE248C /* ContentView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView1.swift; sourceTree = "<group>"; };
+		19E2B3562A7ACBEB00AE248C /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		19E2B3582A7ACF3100AE248C /* ContentView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView3.swift; sourceTree = "<group>"; };
+		19E2B35A2A7AD64B00AE248C /* ContentView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				191B70952A7D7668008DB00A /* PusherSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +123,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		191B70932A7D7668008DB00A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		19337D632943998300D729D4 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +137,7 @@
 				19337D7F2943998500D729D4 /* PusherAppTests */,
 				19337D892943998500D729D4 /* PusherAppUITests */,
 				19337D6D2943998300D729D4 /* Products */,
+				191B70932A7D7668008DB00A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +154,7 @@
 		19337D6E2943998300D729D4 /* PusherApp */ = {
 			isa = PBXGroup;
 			children = (
+				19BD2955294E30EA0035D936 /* secrets.json */,
 				19337DA42943A35000D729D4 /* Views */,
 				19337D9F29439C4B00D729D4 /* Services */,
 				19337D6F2943998300D729D4 /* PusherAppApp.swift */,
@@ -154,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				19337D802943998500D729D4 /* PusherAppTests.swift */,
+				191B70962A7D7AF7008DB00A /* Mocks.swift */,
 				19C7B728294D61C600EDBC46 /* PusherServiceTests.swift */,
 				19337DB329450AD700D729D4 /* MessageViewModelTest.swift */,
 			);
@@ -214,6 +240,11 @@
 				19337DA52943CCCE00D729D4 /* TinkeringWithPusher.swift */,
 				19337DA029439C5800D729D4 /* TransparentPusherService.swift */,
 				19337D712943998300D729D4 /* ContentViewTake1.swift */,
+				19E2B3522A7AB6BF00AE248C /* ContentViewTake0.swift */,
+				19E2B3542A7AC86700AE248C /* ContentView1.swift */,
+				19E2B3562A7ACBEB00AE248C /* ContentView2.swift */,
+				19E2B3582A7ACF3100AE248C /* ContentView3.swift */,
+				19E2B35A2A7AD64B00AE248C /* ContentView4.swift */,
 				19337DB12944FBE400D729D4 /* ContentViewTake2.swift */,
 				19337DAF2944EFEB00D729D4 /* MessageViewModel.swift */,
 			);
@@ -257,6 +288,9 @@
 				19337D7E2943998500D729D4 /* PBXTargetDependency */,
 			);
 			name = PusherAppTests;
+			packageProductDependencies = (
+				191B70942A7D7668008DB00A /* PusherSwift */,
+			);
 			productName = PusherAppTests;
 			productReference = 19337D7C2943998500D729D4 /* PusherAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -330,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19BD2956294E30EA0035D936 /* secrets.json in Resources */,
 				19337D772943998500D729D4 /* Preview Assets.xcassets in Resources */,
 				19337D742943998500D729D4 /* Assets.xcassets in Resources */,
 			);
@@ -356,17 +391,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E2B3552A7AC86700AE248C /* ContentView1.swift in Sources */,
 				19337DAD2944E2FE00D729D4 /* AppDelegate.swift in Sources */,
 				19337DB02944EFEB00D729D4 /* MessageViewModel.swift in Sources */,
+				19E2B35B2A7AD64B00AE248C /* ContentView4.swift in Sources */,
 				19337DA62943CCCE00D729D4 /* TinkeringWithPusher.swift in Sources */,
 				19C7B62929481E9500EDBC46 /* ContentViewFinal.swift in Sources */,
+				19E2B3532A7AB6BF00AE248C /* ContentViewTake0.swift in Sources */,
 				19337DA82944D70C00D729D4 /* MessageService.swift in Sources */,
 				19337D9E29439B4D00D729D4 /* Message.swift in Sources */,
 				19C7B6EA294CCB1500EDBC46 /* RateControllingMessageService.swift in Sources */,
+				19E2B3592A7ACF3100AE248C /* ContentView3.swift in Sources */,
 				19337D722943998300D729D4 /* ContentViewTake1.swift in Sources */,
 				19BD2954294E28C50035D936 /* RandomlyThrowingMessageService.swift in Sources */,
 				19C7B727294D5BF800EDBC46 /* LoadingView.swift in Sources */,
 				19337DB22944FBE400D729D4 /* ContentViewTake2.swift in Sources */,
+				19E2B3572A7ACBEB00AE248C /* ContentView2.swift in Sources */,
 				19BD2950294E19F80035D936 /* MessageListenerView.swift in Sources */,
 				19337DB829450C5900D729D4 /* BasicCombineMessageService.swift in Sources */,
 				19337DA129439C5800D729D4 /* TransparentPusherService.swift in Sources */,
@@ -383,6 +423,7 @@
 				19337DB429450AD700D729D4 /* MessageViewModelTest.swift in Sources */,
 				19C7B729294D61C600EDBC46 /* PusherServiceTests.swift in Sources */,
 				19337D812943998500D729D4 /* PusherAppTests.swift in Sources */,
+				191B70972A7D7AF7008DB00A /* Mocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,12 +749,17 @@
 			repositoryURL = "https://github.com/pusher/pusher-websocket-swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				minimumVersion = 10.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		191B70942A7D7668008DB00A /* PusherSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19337D99294399B100D729D4 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */;
+			productName = PusherSwift;
+		};
 		19337D9A294399B100D729D4 /* PusherSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 19337D99294399B100D729D4 /* XCRemoteSwiftPackageReference "pusher-websocket-swift" */;

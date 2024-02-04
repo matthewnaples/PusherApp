@@ -8,10 +8,12 @@
 import Foundation
 
 
-public struct Message: Codable{
+public struct Message{
     let title: String
     let body: String
     let size: Int
+    
+    
 }
 extension Message: Equatable{}
 //MARK: todo - make this map.

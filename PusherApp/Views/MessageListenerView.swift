@@ -52,7 +52,6 @@ struct MessageListenerView<Content: View>: View{
     }
 }
 
-
 struct ErrorAlert: Equatable, Identifiable{
     let id = UUID()
     init(applicationError: ApplicationError){

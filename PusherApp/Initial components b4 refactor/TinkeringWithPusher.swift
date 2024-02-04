@@ -15,23 +15,7 @@ class SomeObject{
         print("deinitting object")
     }
 }
-struct ContentView1: View{
-    @State private var toggler: Bool = false
 
-    var body: some View{
-        VStack{
-            Button("toggle"){
-                toggler.toggle()
-            }
-            if toggler{
-            Text(" change view")
-            }
-            else{
-        TinkeringWithPusher()
-            }
-        }
-    }
-}
 struct TinkeringWithPusher: View {
     @State private var title: String?
     @State private var message: String?
@@ -51,7 +35,7 @@ struct TinkeringWithPusher: View {
             return
         }
         
-        let decoded = try? JSONDecoder().decode(PusherMessageService.PusherMessage.self, from: jsonData)
+        let decoded = try? JSONDecoder().decode(PusherMessage.self, from: jsonData)
         guard let decodedMessage = decoded else {
             print("Could not decode message")
             return
